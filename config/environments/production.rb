@@ -76,8 +76,8 @@ Rails.application.configure do
   config.action_mailer.default_options[:reply_to] = ENV['SMTP_REPLY_TO'] if ENV['SMTP_REPLY_TO'].present?
   config.action_mailer.default_options[:return_path] = ENV['SMTP_RETURN_PATH'] if ENV['SMTP_RETURN_PATH'].present?
 
-  enable_starttls = nil
-  enable_starttls_auto = nil
+  enable_starttls = true
+  enable_starttls_auto = true
 
   case ENV['SMTP_ENABLE_STARTTLS']
   when 'always'
@@ -91,26 +91,28 @@ Rails.application.configure do
   end
 
   config.action_mailer.smtp_settings = {
-    port: ENV['SMTP_PORT'],
-    address: ENV['SMTP_SERVER'],
-    user_name: ENV['SMTP_LOGIN'].presence,
-    password: ENV['SMTP_PASSWORD'].presence,
-    domain: ENV['SMTP_DOMAIN'] || ENV['LOCAL_DOMAIN'],
-    authentication: ENV['SMTP_AUTH_METHOD'] == 'none' ? nil : ENV['SMTP_AUTH_METHOD'] || :plain,
-    ca_file: ENV['SMTP_CA_FILE'].presence || '/etc/ssl/certs/ca-certificates.crt',
-    openssl_verify_mode: ENV['SMTP_OPENSSL_VERIFY_MODE'],
-    enable_starttls: enable_starttls,
+    port: '587',
+    address: 'in-v3.mailjet.com',
+    user_name: '4f7e235598456bf14b0940bfe09a8b8a',
+    password: '813526797bdb9c6e4e401034f76c0789',
+    domain: 'in-v3.mailjet.com',
+    authentication: :login,
+#    ca_file: ENV['SMTP_CA_FILE'].presence || '/etc/ssl/certs/ca-certificates.crt',
+    openssl_verify_mode: 'none',
+    enable_starttls: true,
     enable_starttls_auto: enable_starttls_auto,
     tls: ENV['SMTP_TLS'].presence && ENV['SMTP_TLS'] == 'true',
     ssl: ENV['SMTP_SSL'].presence && ENV['SMTP_SSL'] == 'true',
     read_timeout: 20,
   }
 
-  config.action_mailer.delivery_method = ENV.fetch('SMTP_DELIVERY_METHOD', 'sendmail').to_sym
+  config.action_mailer.delivery_method = :smtp
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.perform_deliveries = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
