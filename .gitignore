@@ -45,6 +45,11 @@ yarn-debug.log*
 
 /dbb/*
 
+/vendor/*
+
+database.yml
+justask.yml
+
 ### Operating systems / desktops ###
 
 # KDE
