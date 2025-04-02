@@ -16,6 +16,7 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 /public/assets
+/public/uploads/*
 
 # RSpec example status persistence, used by e.g. `rspec --only-failures`
 /spec/examples.txt

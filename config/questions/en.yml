@@ -30,8 +30,11 @@
     - have:
       - a nickname
       - any:
+        - celebrities who you admire, and if so, why
         - siblings
         - pets
+        - unique features or qualities
+        - favorite relative(s) and why
     - like:
       - muffins
       - social networks
@@ -60,6 +63,17 @@
           - your:
             - future
             - relatives
+    - collect:
+      - CDs
+      - DVDs
+      - comics
+      - trading cards
+      - books
+      - magazines
+      - albums
+      - dolls
+      - clothes
+      - stamps
   - your:
     - friends:
       - know:
@@ -178,6 +192,24 @@
     - followers is too many
     - open tabs do you currently have
   - old are you
+  - did:
+    - you:
+      - get into j-idols or k-idols, and if you're not into them, what's your exposure/experience with them
+
+- If:
+  - you:
+    - aren't book smart, what are you smart in
+    - became a minor deity, what would your domain be
+    - were:
+      - a pokemon gym leader, what type would you be what's your pokemon team like in this scenario
+      - an idol, what would your image color/lightstick color be
+      - given the power to enact one change on the timeline permanently & without anyone knowing it was you, how would you use this power to improve things
+    - woke up as a billionaire (jeff bezos, elon musk, etc.) for a day, how would you spend their money
+  - could:
+    - be any fantasy creature, what would you be
+    - only drink one liquid for the rest of your life, what would it be
+  - your:
+    - favorite color ceased to exist, what would be your new favorite color
 
 - What:
   - [activity, activities]:
@@ -209,9 +241,12 @@
       - do when you're bored
       - have for breakfast
   - habit do you really find cute in a person
+  - song has been stuck in your head
   - is:
     - "heavier: a kilogram of steel, or a kilogram of feathers"
     - one thing you would like to become better at
+    - a:
+      - hairstyle that suits you well
     - the:
       - [best, worst]:
         - fast food chain
@@ -229,9 +264,13 @@
           - ever
           - one can do if they're bored
         - way to prepare and eat eggs
+      - weirdest thing that happened today
     - your:
       - dream job
-      - favourite:
+      - current style of dress vs your dream wardrobe
+      - least favorite type of humor
+      - weirdest allergy if you have any
+      - favorite:
         - activity
         - animal
         - beverage
@@ -253,6 +292,11 @@
         - video game
         - way to eat a potato
         - website
+        - comic series
+        - song
+        - album
+        - art piece
+        - scent/smell
       - first memory
   - kind of animals do you have
   - languages do you know
@@ -282,24 +326,33 @@
       - some drawings in your face
       - someone else next to you
 
+- When:
+  - you:
+    - play games (where you can customize your avatar/player), do you tend to play femme characters or more masc characters
+
 - Which food do you:
   - hate
   - love
 
 - Who is:
   - the most famous person you have met
+  - a:
+    - celebrity you hate that is liked and why
   - your:
     - oshi
     - kami-oshi
     - ult bias
     - ult group
+    - bias
+    - rival
   - your favorite:
-    - Retrospring user
+    - spring user
     - actor
     - artist
     - comedian
     - musician
     - idol
+    - character
 
 - Why do:
   - people climb mountains
