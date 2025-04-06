@@ -8,6 +8,11 @@ en:
         <li>users under the age of 18 are not allowed to express, comment/post about, or interact with sexual content inappropriate for their ages. this includes any sexual content including jokes and the sharing of sexual content.</li>
         <li>users older than 18 are not allowed to discuss sexual topics with known underage users. if this is discovered, the adult user in question will be banned immediately with no chance to return.</li>
         <li>harassment is strictly forbidden. this includes harassing other users either on and identifying as your account, on your account but anonymous, or without an account and anonymous. aggressors will be banned from the site if they have an account, and anonymous aggressors will have their IP banned from the site so they will no longer be able to access %{app_name}.</li>
+        <li>alt accounts are strictly forbidden. one account per user.</li>
+        <li>block evading is strictly forbidden. if you are blocked by a user, please respect their wishes. do not attempt to log out and anonymously ask a user why you were blocked, as not only is this block evasion, but you run the risk of having your IP address banned.</li>
+        <li>callout posts are strictly forbidden. if you have concerns about a particular user, please contact a moderator or the admin.</li>
+        <li>refrain from making suicide jokes. sarcastic or not, they run a risk of being triggering and overall dangerous for the health of the community.</li>
+        <li>i can and will only take action on matters that occur on %{app_name}. i am not responsible for events between users of %{app_name} that occur off-site, nor can i be. while you may warn me about a potentially dangerous user, action depends on severity and risk.</li>
         <li>%{app_name} is an inclusive space. discrimination based on race, religion, age, gender, sexuality, and disability will result in an immediate ban.</li>
         <li>%{app_name} is hosted on a server in the United States. as such, %{app_name} is subject to U.S. law. refrain from posting illegal content that will lead to legal liability for %{app_name} and its admin. if such content is posted, depending on severity, it will either be deleted or, in particularly severe cases (such as child sexual exploitation material, also known as CSEM), reported to authorities.</li>
       </ul>
