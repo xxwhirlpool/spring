@@ -26,8 +26,11 @@
         - else
           %strong= t(".status.require_user_no_registration_html",
             sign_in: link_to(t("voc.login"), new_user_session_path))
+    - elsif !user_signed_in? ? "false" : "true" && Retrospring::Config.sitewide_anon_enabled?
+      .text-center
+        %strong= t("anon disabled")
     - else
-      - if user_signed_in? || user.privacy_allow_anonymous_questions?
+      - if user_signed_in? || user.privacy_allow_anonymous_questions? || Retrospring::Config.sitewide_anon_enabled? ? "true" : "false"
         #question-box{
             data: user.profile.allow_long_questions ? {} : { controller: "character-count", "character-count-max-value": user.profile.question_length_limit }
           }
@@ -35,7 +38,7 @@
           .row{ style: "padding-top: 5px;" }
             .col-6
               - if user_signed_in?
-                - if user.privacy_allow_anonymous_questions?
+                - if user.privacy_allow_anonymous_questions? && Retrospring::Config.sitewide_anon_enabled?
                   %label
                     %input{ name: "qb-anonymous", type: :checkbox }
                     = t(".anonymous")

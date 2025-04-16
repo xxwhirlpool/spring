@@ -27,6 +27,8 @@ module Retrospring
     def advanced_frontpage_enabled? = feature_enabled?(:advanced_frontpage)
 
     def readonly? = feature_enabled?(:readonly)
+    
+    def sitewide_anon_enabled? = feature_enabled?(:sitewide_anon)
 
     def feature_enabled?(feature) = APP_CONFIG.dig(:features, feature, :enabled)
   end
